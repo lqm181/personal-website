@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <TopNav />
-        <div className='mx-4'>{children}</div>
+        <div className='px-8'>{children}</div>
       </body>
     </html>
   );

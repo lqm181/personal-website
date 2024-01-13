@@ -1,19 +1,58 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import Link from 'next/link';
 
 function TopNav() {
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const sections = useRef<NodeListOf<HTMLElement> | null>(null);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY + 64; // Add padding for nav bar
+
+    let newActiveSection: string | null = null;
+
+    sections.current &&
+      sections.current.forEach((section) => {
+        const sectionOffsetTop = section?.offsetTop;
+
+        const sectionHeight = section?.offsetHeight;
+
+        if (
+          scrollPosition >= sectionOffsetTop &&
+          scrollPosition < sectionOffsetTop + sectionHeight
+        ) {
+          newActiveSection = section.id;
+        }
+
+        setActiveSection(newActiveSection);
+      });
+  };
+
+  useEffect(() => {
+    sections.current = document.querySelectorAll('[data-section]');
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky z-[1] w-screen max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2'>
+    <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-[1] w-screen max-w-full flex flex-wrap items-center justify-between mx-auto px-8 py-2 backdrop-blur-lg'>
       <span className='font-bold text-2xl'>minhle</span>
 
       {/* Navigation Links */}
       <NavigationMenu.List className='flex flex-1 flex-grow center list-none '>
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className='block hover:text-blue-700 rounded select-none px-3 py-2 font-medium leading-none no-underline outline-none focus:shadow-[0_0_0_2px]'
-            href='/projects'
+            className={`block ${
+              activeSection === 'projects'
+                ? 'text-blue-700 underline'
+                : ' hover:text-blue-700 no-underline'
+            } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
+            href='#projects'
           >
             Projects
           </NavigationMenu.Link>
@@ -21,8 +60,12 @@ function TopNav() {
 
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className='block hover:text-blue-700 rounded select-none px-3 py-2 font-medium leading-none no-underline outline-none focus:shadow-[0_0_0_2px'
-            href='/about'
+            className={`block ${
+              activeSection === 'about'
+                ? 'text-blue-700 underline'
+                : ' hover:text-blue-700 no-underline'
+            } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
+            href='#about'
           >
             About
           </NavigationMenu.Link>
@@ -30,13 +73,18 @@ function TopNav() {
 
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className='block hover:text-blue-700 rounded select-none px-3 py-2 font-medium leading-none no-underline outline-none focus:shadow-[0_0_0_2px'
-            href='/contact'
+            className={`block ${
+              activeSection === 'contact'
+                ? 'text-blue-700 underline'
+                : ' hover:text-blue-700 no-underline'
+            } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
+            href='#contact'
           >
             Contact
           </NavigationMenu.Link>
         </NavigationMenu.Item>
       </NavigationMenu.List>
+
       <button
         type='button'
         className='text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 '

@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
+
+html {
+  scroll-padding-top: 4rem;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+  display: block;
+  box-sizing: border-box;
+}
