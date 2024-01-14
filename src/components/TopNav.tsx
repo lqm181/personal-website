@@ -41,7 +41,7 @@ function TopNav() {
 
   return (
     <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 z-[1] w-screen max-w-full flex flex-wrap items-center justify-between mx-auto px-8 py-2 backdrop-blur-lg'>
-      <span className='font-bold text-2xl'>minhle</span>
+      <span className='font-bold text-2xl'>Minh Le</span>
 
       {/* Navigation Links */}
       <NavigationMenu.List className='flex flex-1 flex-grow center list-none '>
