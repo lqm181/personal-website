@@ -1,13 +1,13 @@
 import React from 'react';
-import { GlobeAltIcon } from '@heroicons/react/24/outline';
+import { ArrowLongDownIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 
 function HeroSection() {
   return (
-    <section>
-      <div className='grid grid-cols-1  md:grid-cols-2 gap-4 h-full px-20'>
+    <section className='flex flex-col'>
+      <div className='grid grid-cols-1  lg:grid-cols-2 gap-4 h-full px-20'>
         {/* Left Section */}
         <div className='flex h-full flex-col justify-center'>
-          <div className='flex mb-8'>
+          <div className='flex mb-4 lg:mb-8'>
             {/* Globe icon */}
             <GlobeAltIcon className='h-6 w-6 text-green-400' />
 
@@ -15,17 +15,17 @@ function HeroSection() {
               Status: Open to Work
             </p>
           </div>
-          <h1 className='text-4xl md:text-7xl font-extrabold leading-6 tracking-tight dark:text-white mb-4'>
+          <h1 className='text-4xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white mb-4'>
             Hey,
           </h1>
-          <h1 className='text-4xl md:text-7xl font-extrabold leading-6 tracking-tight dark:text-white'>
+          <h1 className='text-4xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white'>
             I'm Minh.
           </h1>
         </div>
 
         {/* Right Section */}
         <div className='flex flex-col justify-center items-center pl-16'>
-          <p className=' text-2xl md:text-4xl mb-20'>
+          <p className=' text-2xl lg:text-4xl mb-20'>
             I'm a curiosity-driven software engineer with a passion for
             expanding my tech knowledge and developing high-quality software.
           </p>
@@ -45,6 +45,13 @@ function HeroSection() {
             </button>
           </div>
         </div>
+      </div>
+      <div
+        className='flex w-full items-end lg:pb-8'
+        style={{ writingMode: 'vertical-lr' }}
+      >
+        <p className='mb-1'>scroll</p>
+        <ArrowLongDownIcon className='h-6 w-6 text-gray-900' />
       </div>
     </section>
   );
