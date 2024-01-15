@@ -8,6 +8,7 @@
 
 html {
   scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
   height: 100%;
   width: 100%;
 }
@@ -18,8 +19,23 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: block;
   box-sizing: border-box;
+}
+
+.chip {
+  display: flex;
+  border-radius: 9999px;
+  border: 1px solid #4a5568;
+  color: #5d5e5f;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
