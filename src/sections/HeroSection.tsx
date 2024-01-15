@@ -1,15 +1,16 @@
 import React from 'react';
 import { ArrowLongDownIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import Section from '@/components/Section';
 
 function HeroSection() {
   return (
-    <section className='flex flex-col h-screen'>
-      <div className='grid grid-cols-1  lg:grid-cols-2 gap-4 h-full px-20'>
+    <Section className='h-screen' theme='light'>
+      <div className='grid grid-cols-1  lg:grid-cols-2 gap-4 h-full px-8 lg:px-20 py-20'>
         {/* Left Section */}
         <div className='flex h-full flex-col justify-center'>
           <div className='flex mb-4 lg:mb-8'>
             {/* Globe icon */}
-            <GlobeAltIcon className='h-6 w-6 text-green-400' />
+            <GlobeAltIcon className='h-6 w-6 text-green-400 dark:text-green-400' />
 
             <p className='font-semibold dark:text-white text-xl ml-2'>
               Status: Open to Work
@@ -30,7 +31,7 @@ function HeroSection() {
             expanding my tech knowledge and developing high-quality software.
           </p>
 
-          <div className='flex justify-around w-full'>
+          <div className='flex justify-evenly w-full'>
             <a href='#projects'>
               <button
                 type='button'
@@ -41,7 +42,7 @@ function HeroSection() {
             </a>
             <button
               type='button'
-              className='py-2.5 px-5 text-sm font-medium text-blue-800 focus:outline-none bg-white rounded-full border border-blue-500 hover:bg-gray-100 hover:boder-blue-700 focus:ring-4 focus:ring-blue-300 focus:z-10 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 min-w-32'
+              className='py-2.5 px-5 text-sm font-medium text-blue-800 focus:outline-none bg-white rounded-full border border-blue-500 hover:bg-gray-100 hover:boder-blue-700 focus:ring-4 focus:ring-blue-300 focus:z-10 dark:bg-black dark:text-white dark:border-white dark:hover:text-white dark:hover:bg-gray-700 min-w-32'
             >
               Connect
             </button>
@@ -49,13 +50,13 @@ function HeroSection() {
         </div>
       </div>
       <div
-        className='flex w-full items-end lg:pb-8'
+        className='flex w-full items-end pt-8 lg:pt-14'
         style={{ writingMode: 'vertical-lr' }}
       >
         <p className='mb-1'>scroll</p>
-        <ArrowLongDownIcon className='h-6 w-6 text-gray-900' />
+        <ArrowLongDownIcon className='h-6 w-6 text-gray-900 dark:text-white' />
       </div>
-    </section>
+    </Section>
   );
 }
 

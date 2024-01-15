@@ -10,7 +10,7 @@ export default function Home() {
         <ProjectsSection />
       </div>
 
-      <div data-section className='mb-6' id='about'>
+      <div data-section className='mb-6 bg-white text-black' id='about'>
         {/* <div className='scroll-pt-16 mb-4'> */}
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -40,7 +40,7 @@ function TopNav() {
   }, []);
 
   return (
-    <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed top-0 z-[1] w-screen max-w-full flex flex-wrap items-center justify-between mx-auto px-8 py-2 backdrop-blur-lg'>
+    <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-black dark:border-gray-700 fixed top-0 z-[1] w-screen max-w-full flex flex-wrap items-center justify-between mx-auto px-8 py-2 backdrop-blur-lg'>
       <span className='font-bold text-2xl'>Minh Le</span>
 
       {/* Navigation Links */}
@@ -87,7 +87,7 @@ function TopNav() {
 
       <button
         type='button'
-        className='text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 '
+        className='text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5 me-2 mb-2 dark:bg-white dark:hover:bg-gray-200 dark:focus:ring-gray-500 dark:border-gray-500 dark:text-black'
       >
         Let's Talk
       </button>
