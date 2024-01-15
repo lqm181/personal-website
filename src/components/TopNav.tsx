@@ -87,7 +87,7 @@ function TopNav() {
 
       <button
         type='button'
-        className='text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5 me-2 mb-2 dark:bg-white dark:hover:bg-gray-200 dark:focus:ring-gray-500 dark:border-gray-500 dark:text-black'
+        className='text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5 me-2 mb-2 dark:bg-white dark:hover:bg-gray-200 dark:focus:ring-gray-500 dark:border-gray-500 dark:text-black'
       >
         Let's Talk
       </button>

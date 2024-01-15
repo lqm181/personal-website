@@ -26,7 +26,7 @@ function HeroSection() {
 
         {/* Right Section */}
         <div className='flex flex-col justify-center items-center pl-16'>
-          <p className=' text-2xl lg:text-4xl mb-20'>
+          <p className=' text-xl lg:text-4xl mb-20'>
             I'm a curiosity-driven software engineer with a passion for
             expanding my tech knowledge and developing high-quality software.
           </p>
@@ -50,7 +50,7 @@ function HeroSection() {
         </div>
       </div>
       <div
-        className='flex w-full items-end pt-8 lg:pt-14'
+        className='flex w-full items-end min-h-28'
         style={{ writingMode: 'vertical-lr' }}
       >
         <p className='mb-1'>scroll</p>

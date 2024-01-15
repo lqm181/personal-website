@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     default: 'Home | Minh Le',
   },
   description: 'Personal Portfolio Website of Minh Le.',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 export default function RootLayout({

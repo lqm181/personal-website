@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <div className=''>
       <HeroSection />
-      <div data-section className='mb-6' id='projects'>
-        <ProjectsSection />
-      </div>
+      <ProjectsSection />
 
       <div data-section className='mb-6 bg-white text-black' id='about'>
         {/* <div className='scroll-pt-16 mb-4'> */}

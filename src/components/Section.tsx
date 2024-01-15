@@ -1,18 +1,15 @@
 'use client';
 
-import React, { ReactNode, useRef } from 'react';
+import React, { HTMLProps, ReactNode, useRef } from 'react';
 import { useTheme } from 'next-themes';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
 
-function Section({
-  children,
-  className,
-  theme,
-}: {
+interface SectionProps extends HTMLProps<HTMLElement> {
   children: ReactNode;
-  className: string | undefined;
   theme: string;
-}) {
+}
+
+function Section({ children, className, theme, ...props }: SectionProps) {
   const { resolvedTheme, setTheme } = useTheme();
   const container = useRef(null);
 
@@ -28,10 +25,11 @@ function Section({
   });
   return (
     <section
-      className={`flex flex-col bg-white dark:bg-black py-32 min-h-screen ${
+      className={`flex flex-col bg-white dark:bg-black my-8 min-h-screen ${
         className ? className : ''
       }`}
       ref={container}
+      {...props}
     >
       {children}
     </section>
