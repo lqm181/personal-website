@@ -49,8 +49,8 @@ function TopNav() {
           <NavigationMenu.Link
             className={`block ${
               activeSection === 'projects'
-                ? 'text-blue-700 underline'
-                : ' hover:text-blue-700 no-underline'
+                ? 'text-blue-500 underline'
+                : ' hover:text-blue-500 no-underline'
             } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
             href='#projects'
           >
@@ -62,8 +62,8 @@ function TopNav() {
           <NavigationMenu.Link
             className={`block ${
               activeSection === 'about'
-                ? 'text-blue-700 underline'
-                : ' hover:text-blue-700 no-underline'
+                ? 'text-blue-500 underline'
+                : ' hover:text-blue-500 no-underline'
             } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
             href='#about'
           >
@@ -75,8 +75,8 @@ function TopNav() {
           <NavigationMenu.Link
             className={`block ${
               activeSection === 'contact'
-                ? 'text-blue-700 underline'
-                : ' hover:text-blue-700 no-underline'
+                ? 'text-blue-500 underline'
+                : ' hover:text-blue-500 no-underline'
             } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
             href='#contact'
           >

@@ -6,16 +6,17 @@ import React from 'react';
 function ProjectsSection() {
   return (
     <Section
+      data-section
       className='items-center h-max mt-24 lg:mt-48'
       theme='dark'
       id='projects'
     >
       <div className='flex justify-centers items-center mb-20'>
-        <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10  dark:text-white mr-4' />
+        <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10 dark:text-white mr-4' />
         <h1 className='dark:text-white font-extrabold text-3xl lg:text-5xl'>
           Recent Projects
         </h1>
-        <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10  dark:text-white ml-4' />
+        <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10 dark:text-white ml-4' />
       </div>
 
       <div className='flex flex-col w-full py-4 px-2 lg:px-16 mt-4'>
