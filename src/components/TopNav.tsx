@@ -1,10 +1,13 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
 
 function TopNav() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const sections = useRef<NodeListOf<HTMLElement> | null>(null);
+  const { theme } = useTheme();
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + 64; // Add padding for nav bar
@@ -41,7 +44,21 @@ function TopNav() {
 
   return (
     <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-black dark:border-gray-700 fixed top-0 z-[1] w-screen max-w-full flex flex-wrap items-center justify-between mx-auto px-8 py-2 backdrop-blur-lg'>
-      <span className='font-bold text-2xl'>Minh Le</span>
+      <a href='#'>
+        <div className='flex w-max items-center'>
+          <Image
+            className='mr-2 pb-2'
+            src={`/assets/minh_le_logo_${
+              theme === 'light' ? 'dark' : 'light'
+            }.png`}
+            alt="Minh Le's logo"
+            height={36}
+            width={36}
+            quality={100}
+          />
+          <span className='font-bold text-2xl'>Minh Le</span>
+        </div>
+      </a>
 
       {/* Navigation Links */}
       <NavigationMenu.List className='flex flex-1 flex-grow center list-none '>

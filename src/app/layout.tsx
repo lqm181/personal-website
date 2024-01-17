@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import TopNav from '@/components/TopNav';
@@ -12,11 +12,24 @@ export const metadata: Metadata = {
     default: 'Home | Minh Le',
   },
   description: 'Personal Portfolio Website of Minh Le.',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: dark',
+        url: '/assets/minh_le_logo_dark.png',
+      },
+      {
+        media: '(prefers-color-scheme: light',
+        url: '/assets/minh_le_logo_light.png',
+      },
+    ],
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({
@@ -26,6 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='light' style={{ colorScheme: 'light' }}>
+      <head>{/* <link rel='icon' href='/favicon.ico' sizes='32x32' /> */}</head>
       <body className={inter.className}>
         <Providers>
           <header>
