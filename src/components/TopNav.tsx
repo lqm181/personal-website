@@ -47,7 +47,7 @@ function TopNav() {
       <a href='#'>
         <div className='flex w-max items-center'>
           <Image
-            className='mr-2 pb-2'
+            className='pb-2'
             src={`/assets/minh_le_logo_${
               theme === 'light' ? 'dark' : 'light'
             }.png`}

@@ -9,9 +9,10 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: {
     template: '%s | Minh Le',
-    default: 'Home | Minh Le',
+    default: "Minh Le's Portfolio Website",
   },
-  description: 'Personal Portfolio Website of Minh Le.',
+  description:
+    'Software Engineer with 7+ years of coding experience and a passion for buidling impactful and high-quality software solutions.',
   icons: {
     icon: [
       {

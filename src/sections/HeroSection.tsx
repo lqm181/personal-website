@@ -5,7 +5,7 @@ import Section from '@/components/Section';
 function HeroSection() {
   return (
     <Section className='h-screen' theme='light'>
-      <div className='grid grid-cols-1  lg:grid-cols-2 gap-4 h-full px-8 lg:px-20 py-20'>
+      <div className='grid grid-cols-1  lg:grid-cols-2 gap-4 h-full px-8 lg:px-20 pt-24'>
         {/* Left Section */}
         <div className='flex h-full flex-col justify-center'>
           <div className='flex mb-4 lg:mb-8'>
@@ -16,41 +16,43 @@ function HeroSection() {
               Status: Open to Work
             </p>
           </div>
-          <h1 className='text-4xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white mb-4'>
-            Hey,
+          <h1 className='text-5xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white mb-4'>
+            <i>Xin chào</i>,
           </h1>
-          <h1 className='text-4xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white'>
+          <h1 className='text-5xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white'>
             I'm Minh.
           </h1>
         </div>
 
         {/* Right Section */}
-        <div className='flex flex-col justify-center items-center pl-16'>
-          <p className=' text-xl lg:text-4xl mb-20'>
+        <div className='flex flex-col justify-center items-center lg:pl-16 mt-4 lg:mt-0'>
+          <p className=' text-2xl lg:text-4xl mb-12 lg:mb-20'>
             I'm a curiosity-driven software engineer with a passion for
             expanding my tech knowledge and developing high-quality software.
           </p>
 
           <div className='flex justify-evenly w-full'>
-            <a href='#projects'>
+            <a href='#contact'>
               <button
                 type='button'
                 className='text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 min-w-32'
               >
-                View Projects
+                Hire Me
               </button>
             </a>
-            <button
-              type='button'
-              className='py-2.5 px-5 text-sm font-medium text-blue-800 focus:outline-none bg-white rounded-full border border-blue-500 hover:bg-gray-100 hover:boder-blue-700 focus:ring-4 focus:ring-blue-300 focus:z-10 dark:bg-black dark:text-white dark:border-white dark:hover:text-white dark:hover:bg-gray-700 min-w-32'
-            >
-              Connect
-            </button>
+            <a href='#projects'>
+              <button
+                type='button'
+                className='py-2.5 px-5 text-sm font-medium text-blue-800 focus:outline-none bg-white rounded-full border border-blue-500 hover:bg-gray-100 hover:boder-blue-700 focus:ring-4 focus:ring-blue-300 focus:z-10 dark:bg-black dark:text-white dark:border-white dark:hover:text-white dark:hover:bg-gray-700 min-w-32'
+              >
+                Projects
+              </button>
+            </a>
           </div>
         </div>
       </div>
       <div
-        className='flex w-full items-end min-h-28'
+        className='flex w-full items-end min-h-28 mt-4'
         style={{ writingMode: 'vertical-lr' }}
       >
         <p className='mb-1'>scroll</p>

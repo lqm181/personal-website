@@ -25,11 +25,11 @@ function ContactSection() {
       theme='light'
     >
       <div className='flex justify-centers items-center mb-20'>
-        <EnvelopeIcon className='h-6 w-6 lg:h-10 lg:w-10 text-blue-500 dark:text-white mr-4' />
-        <h1 className='text-blue-500 dark:text-white font-extrabold text-4xl lg:text-5xl'>
+        <EnvelopeIcon className='h-6 w-6 lg:h-10 lg:w-10 text-black dark:text-white mr-4' />
+        <h1 className='text-black dark:text-white font-extrabold text-4xl lg:text-5xl'>
           Contact Me
         </h1>
-        <EnvelopeIcon className='h-6 w-6 lg:h-10 lg:w-10 text-blue-500 dark:text-white ml-4' />
+        <EnvelopeIcon className='h-6 w-6 lg:h-10 lg:w-10 text-black dark:text-white ml-4' />
       </div>
 
       {/* Contact Form */}
