@@ -49,7 +49,7 @@ function TopNav() {
           <Image
             className='pb-2'
             src={`/assets/minh_le_logo_${
-              theme === 'light' ? 'dark' : 'light'
+              theme === 'dark' ? 'light' : 'dark'
             }.png`}
             alt="Minh Le's logo"
             height={36}
