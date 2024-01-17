@@ -5,7 +5,7 @@ import React from 'react';
 function AboutSection() {
   return (
     <Section
-      className='bg-gray-100 px-16 py-16 items-center h-max'
+      className='bg-[#F7F7F7] px-16 py-16 items-center h-max'
       theme='light'
       data-section
       id='about'
