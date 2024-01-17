@@ -13,7 +13,7 @@ function ProjectsSection() {
     >
       <div className='flex justify-centers items-center mb-20'>
         <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10 dark:text-white mr-4' />
-        <h1 className='dark:text-white font-extrabold text-3xl lg:text-5xl'>
+        <h1 className='dark:text-white font-extrabold text-4xl lg:text-5xl'>
           Recent Projects
         </h1>
         <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10 dark:text-white ml-4' />

@@ -5,14 +5,14 @@ import React from 'react';
 function AboutSection() {
   return (
     <Section
-      className='bg-[#F7F7F7] px-16 py-16 items-center h-max'
+      className='bg-slate-50 px-4 lg:px-16 py-16 items-center h-max'
       theme='light'
       data-section
       id='about'
     >
       <div className='flex justify-centers items-center mb-20'>
         {/* <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10  dark:text-white mr-4' /> */}
-        <h1 className='text-blue-500 dark:text-white font-extrabold text-3xl lg:text-5xl'>
+        <h1 className='text-blue-500 dark:text-white font-extrabold text-4xl lg:text-5xl'>
           - About -
         </h1>
         {/* <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10  dark:text-white ml-4' /> */}
@@ -32,7 +32,7 @@ function AboutSection() {
           <h1 className='text-2xl lg:text-3xl font-bold w-full text-center'>
             A brief intro, who am I?
           </h1>
-          <div className='flex flex-col gap-4 text-lg lg:text-xl leading'>
+          <div className='flex flex-col gap-4 text-base lg:text-xl leading'>
             <p className='leading-relaxed'>
               Hello! I’m Minh Le, a recent Computer Science graduate from Boston
               University.

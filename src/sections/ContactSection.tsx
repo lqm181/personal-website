@@ -9,6 +9,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import React from 'react';
 import { MapPinIcon } from '@heroicons/react/24/outline';
 import TimeZoneClock from '@/components/TimeZoneClock';
+import ContactForm from '@/components/ContactForm';
 
 const currentLocation = {
   address: 'Boston, MA, United States',
@@ -18,21 +19,35 @@ const currentLocation = {
 function ContactSection() {
   return (
     <Section
-      className='px-16 py-16 items-center h-max'
+      className='px-4 lg:px-16 py-16 items-center h-max'
       data-section
       id='contact'
       theme='light'
     >
       <div className='flex justify-centers items-center mb-20'>
         <EnvelopeIcon className='h-6 w-6 lg:h-10 lg:w-10 text-blue-500 dark:text-white mr-4' />
-        <h1 className='text-blue-500 dark:text-white font-extrabold text-3xl lg:text-5xl'>
+        <h1 className='text-blue-500 dark:text-white font-extrabold text-4xl lg:text-5xl'>
           Contact Me
         </h1>
         <EnvelopeIcon className='h-6 w-6 lg:h-10 lg:w-10 text-blue-500 dark:text-white ml-4' />
       </div>
 
-      <div className='grid grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
-        <div className='grid grid-cols-subgrid col-span-2 w-full'>Hi</div>
+      {/* Contact Form */}
+      <div className='grid grid-cols-2 lg:grid-cols-3 gap-16 w-full'>
+        <div className='col-span-2 w-full'>
+          <h1 className='text-3xl lg:text-4xl font-bold mb-4'>
+            Let's work together.
+          </h1>
+          <h3 className='text-base font-light lg:text-lg text-gray-500 lg:pr-32 mb-12'>
+            I am actively seeking full-time opportunities as a software engineer
+            where I can contribute to impactful projects, enhance my skills, and
+            grow as a professional.
+          </h3>
+
+          <ContactForm />
+        </div>
+
+        {/* Contact Information */}
         <div className='grid grid-cols-subgrid col-span-2 lg:col-span-1 w-full'>
           <div className='flex flex-row flex-wrap col-span-full gap-12'>
             {/* Contact Details */}
