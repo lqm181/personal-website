@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/home_page.png',
+        url: '/assets/home_page.png',
         width: 1900,
         height: 868,
         alt: "Minh Le's Portfolio Image",
