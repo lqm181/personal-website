@@ -16,10 +16,10 @@ function HeroSection() {
               Status: Open to Work
             </p>
           </div>
-          <h1 className='text-5xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white mb-4'>
-            <i>Hey</i> {'👋'}
+          <h1 className='text-4xl lg:text-6xl font-extrabold leading-2 tracking-tight dark:text-white mb-4'>
+            <i>Xin chào</i> {'👋'}
           </h1>
-          <h1 className='text-5xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white'>
+          <h1 className='text-4xl lg:text-6xl font-extrabold leading-2 tracking-tight dark:text-white'>
             I'm Minh.
           </h1>
         </div>

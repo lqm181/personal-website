@@ -27,6 +27,21 @@ export const metadata: Metadata = {
       },
     ],
   },
+  openGraph: {
+    title: "Minh Le's Portfolio Website",
+    description:
+      'Software Engineer with 7+ years of coding experience and a passion for buidling impactful and high-quality software solutions.',
+    url: 'https://minhleq.com/',
+    type: 'website',
+    images: [
+      {
+        url: '/home_page.png',
+        width: 1900,
+        height: 868,
+        alt: "Minh Le's Portfolio Image",
+      },
+    ],
+  },
 };
 
 export const viewport: Viewport = {
