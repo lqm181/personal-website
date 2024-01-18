@@ -13,7 +13,7 @@ function ProjectsSection() {
     >
       <div className='flex justify-centers items-center mb-20'>
         <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10 dark:text-white mr-4' />
-        <h1 className='dark:text-white font-extrabold text-4xl lg:text-5xl'>
+        <h1 className='dark:text-white font-extrabold text-4xl lg:text-5xl text-center'>
           Recent Projects
         </h1>
         <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10 dark:text-white ml-4' />
@@ -37,6 +37,7 @@ function ProjectsSection() {
 
           {/* Ravis Technology */}
           <div className='flex container justify-center mt-6 flex-wrap'>
+            <div className='chip'>Web Development</div>
             <div className='chip'>Apache Airflow</div>
             <div className='chip'>Flask</div>
             <div className='chip'>JavaScript</div>
@@ -73,6 +74,8 @@ function ProjectsSection() {
 
               {/* Epik Technology */}
               <div className='flex container justify-center mt-12 flex-wrap'>
+                <div className='chip'>Machine Learning</div>
+                <div className='chip'>GPT 4.0</div>
                 <div className='chip'>Huggingface</div>
                 <div className='chip'>Gradio</div>
                 <div className='chip'>NLTK</div>
@@ -112,6 +115,9 @@ function ProjectsSection() {
 
               {/* OS Technology */}
               <div className='flex container justify-center mt-12 flex-wrap'>
+                <div className='chip'>Operating System</div>
+                <div className='chip'>SATA</div>
+                <div className='chip'>AHCI</div>
                 <div className='chip'>C</div>
                 <div className='chip'>Assembly x86</div>
                 <div className='chip'>Linux</div>
