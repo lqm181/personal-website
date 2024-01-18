@@ -17,7 +17,7 @@ function HeroSection() {
             </p>
           </div>
           <h1 className='text-5xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white mb-4'>
-            <i>Xin chào</i>,
+            <i>Hey</i> {'👋'}
           </h1>
           <h1 className='text-5xl lg:text-7xl font-extrabold leading-2 tracking-tight dark:text-white'>
             I'm Minh.
