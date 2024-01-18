@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import 'react-toastify/dist/ReactToastify.css';
 import TopNav from '@/components/TopNav';
 import Providers from '@/components/Providers';
+import { ToastContainer } from 'react-toastify';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -46,7 +48,19 @@ export default function RootLayout({
           <header>
             <TopNav />
           </header>
-          <main className='bg-white dark:bg-black px-8'>{children}</main>
+          <main className='bg-white dark:bg-black px-8'>
+            {children}
+
+            <ToastContainer
+              position='top-right'
+              autoClose={3000}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              theme='light'
+            />
+          </main>
         </Providers>
       </body>
     </html>
