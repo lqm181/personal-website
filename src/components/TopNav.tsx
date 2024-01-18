@@ -56,7 +56,9 @@ function TopNav() {
             width={36}
             quality={100}
           />
-          <span className='font-bold text-2xl'>Minh Le</span>
+          <span className='text-black dark:text-white font-bold text-2xl'>
+            Minh Le
+          </span>
         </div>
       </a>
 
@@ -64,9 +66,9 @@ function TopNav() {
       <NavigationMenu.List className='flex flex-1 flex-grow center list-none '>
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className={`block ${
+            className={`text-black dark:text-white block ${
               activeSection === 'projects'
-                ? 'text-blue-500 underline'
+                ? '!text-blue-500 underline'
                 : ' hover:text-blue-500 no-underline'
             } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
             href='#projects'
@@ -77,9 +79,9 @@ function TopNav() {
 
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className={`block ${
+            className={`block text-black dark:text-white ${
               activeSection === 'about'
-                ? 'text-blue-500 underline'
+                ? '!text-blue-500 underline'
                 : ' hover:text-blue-500 no-underline'
             } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
             href='#about'
@@ -90,9 +92,9 @@ function TopNav() {
 
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className={`block ${
+            className={`block text-black dark:text-white ${
               activeSection === 'contact'
-                ? 'text-blue-500 underline'
+                ? '!text-blue-500 underline'
                 : ' hover:text-blue-500 no-underline'
             } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
             href='#contact'

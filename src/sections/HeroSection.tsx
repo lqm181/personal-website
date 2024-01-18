@@ -12,21 +12,21 @@ function HeroSection() {
             {/* Globe icon */}
             <GlobeAltIcon className='h-6 w-6 text-green-400 dark:text-green-400' />
 
-            <p className='font-semibold dark:text-white text-xl ml-2'>
+            <p className='font-semibold text-black dark:text-white text-xl ml-2'>
               Status: Open to Work
             </p>
           </div>
-          <h1 className='text-4xl lg:text-6xl font-extrabold leading-2 tracking-tight dark:text-white mb-4'>
-            <i>Xin chào</i> {'👋'}
+          <h1 className='text-4xl lg:text-6xl font-extrabold leading-2 tracking-tight  mb-4'>
+            <i className='text-black dark:text-white'>Xin chào</i> {'👋'}
           </h1>
-          <h1 className='text-4xl lg:text-6xl font-extrabold leading-2 tracking-tight dark:text-white'>
+          <h1 className='text-4xl lg:text-6xl font-extrabold leading-2 tracking-tight text-black dark:text-white'>
             I'm Minh.
           </h1>
         </div>
 
         {/* Right Section */}
         <div className='flex flex-col justify-center items-center lg:pl-16 mt-4 lg:mt-0'>
-          <p className=' text-2xl lg:text-4xl mb-12 lg:mb-20'>
+          <p className='text-black dark:text-white text-2xl lg:text-4xl mb-12 lg:mb-20'>
             I'm a curiosity-driven software engineer with a passion for
             expanding my tech knowledge and developing high-quality software.
           </p>
@@ -55,7 +55,7 @@ function HeroSection() {
         className='flex w-full items-end min-h-28 mt-4'
         style={{ writingMode: 'vertical-lr' }}
       >
-        <p className='mb-1'>scroll</p>
+        <p className='mb-1 text-black dark:text-white'>scroll</p>
         <ArrowLongDownIcon className='h-6 w-6 text-gray-900 dark:text-white' />
       </div>
     </Section>

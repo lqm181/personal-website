@@ -35,10 +35,10 @@ function ContactSection() {
       {/* Contact Form */}
       <div className='grid grid-cols-2 lg:grid-cols-3 gap-16 w-full'>
         <div className='col-span-2 w-full'>
-          <h1 className='text-3xl lg:text-4xl font-bold mb-4'>
+          <h1 className='text-black dark:text-white text-3xl lg:text-4xl font-bold mb-4'>
             Let's work together.
           </h1>
-          <h3 className='text-base font-light lg:text-lg text-gray-500 lg:pr-32 mb-12'>
+          <h3 className='text-base font-light lg:text-lg text-gray-500 dark:text-gray-200 lg:pr-32 mb-12'>
             I am actively seeking full-time opportunities as a software engineer
             where I can contribute to impactful projects, enhance my skills, and
             grow as a professional.

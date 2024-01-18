@@ -5,7 +5,7 @@ import React from 'react';
 function AboutSection() {
   return (
     <Section
-      className='bg-gray-100 px-4 lg:px-16 py-16 items-center h-max'
+      className='bg-gray-100 dark:bg-black px-4 lg:px-16 py-16 items-center h-max'
       theme='light'
       data-section
       id='about'
@@ -29,31 +29,31 @@ function AboutSection() {
           />
         </div>
         <div className='flex flex-col gap-8'>
-          <h1 className='text-2xl lg:text-3xl font-bold w-full text-center'>
+          <h1 className='text-black dark:text-white text-2xl lg:text-3xl font-bold w-full text-center'>
             A brief intro, who am I?
           </h1>
           <div className='flex flex-col gap-4 text-base lg:text-xl leading'>
-            <p className='leading-relaxed'>
+            <p className='text-black dark:text-white leading-relaxed '>
               Hello! I’m Minh Le, a recent Computer Science graduate from Boston
               University.
             </p>
-            <p className='leading-relaxed'>
+            <p className='text-black dark:text-white leading-relaxed'>
               My academic journey has equipped me with a strong foundation in
               algorithms, data structures, machine learning, system
               architecture, and software design.
             </p>
-            <p className='leading-relaxed'>
+            <p className='text-black dark:text-white leading-relaxed'>
               Proficient in Python, Java, JavaScript, C, and Go, I have hands-on
               experience across frontend and backend development, including web
               development, databases, operating system design, and software
               testing.
             </p>
-            <p className='leading-relaxed'>
+            <p className='text-black dark:text-white leading-relaxed'>
               Outside of coding, I find joy in working out, exploring YouTube
               content, and indulging in manga. I also have a passion for cooking
               and enjoy experimenting with new recipes.
             </p>
-            <p className='leading-relaxed'>
+            <p className='text-black dark:text-white leading-relaxed'>
               Let's connect and explore opportunities together!
             </p>
           </div>
