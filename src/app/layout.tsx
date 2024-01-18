@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/assets/home_page.png',
-        width: 1900,
-        height: 868,
+        url: 'https://minhleq.com/assets/home_page.png',
+        width: 1600,
+        height: 750,
         alt: "Minh Le's Portfolio Image",
       },
     ],
