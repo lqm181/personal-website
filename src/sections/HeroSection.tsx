@@ -56,7 +56,10 @@ function HeroSection() {
         style={{ writingMode: 'vertical-lr' }}
       >
         <p className='mb-1 text-black dark:text-white'>scroll</p>
-        <ArrowLongDownIcon className='h-6 w-6 text-gray-900 dark:text-white' />
+        <div className='flex h-6 overflow-hidden w-6 relative'>
+          <ArrowLongDownIcon className='absolute h-6 w-6 text-gray-900 dark:text-white animate-fade-tb -top-full' />
+          <ArrowLongDownIcon className='absolute h-6 w-6 text-gray-900 dark:text-white animate-fade-tb' />
+        </div>
       </div>
     </Section>
   );

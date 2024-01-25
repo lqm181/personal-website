@@ -9,11 +9,46 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      keyframes: {
+        fadeTopBottom: {
+          '0%': {
+            transform: 'translateY(0%)',
+          },
+          '10%': {
+            transform: 'translateY(10%)',
+          },
+          '20%': {
+            transform: 'translateY(20%)',
+          },
+          '30%': {
+            transform: 'translateY(30%)',
+          },
+          '40%': {
+            transform: 'translateY(40%)',
+          },
+          '50%': {
+            transform: 'translateY(50%)',
+          },
+          '60%': {
+            transform: 'translateY(60%)',
+          },
+          '70%': {
+            transform: 'translateY(70%)',
+          },
+          '80%': {
+            transform: 'translateY(80%)',
+          },
+          '90%': {
+            transform: 'translateY(90%)',
+          },
+          '100%': {
+            transform: 'translateY(100%)',
+          }
+        }
       },
+      animation: {
+        'fade-tb': 'fadeTopBottom 2s infinite'
+      }
     },
   },
   darkMode: 'class',
