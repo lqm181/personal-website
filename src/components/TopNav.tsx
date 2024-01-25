@@ -92,7 +92,10 @@ function TopNav() {
           </button>
         </a>
 
-        <div className='order-last md:order-1 flex flex-col md:block'>
+        <div
+          className='order-last md:order-1 flex flex-col md:block'
+          onBlur={() => setIsOpen(false)}
+        >
           {/* Navigation Links */}
           <NavigationMenu.List
             className={`absolute md:static ${isOpen ? 'flex' : 'hidden md:flex'}
