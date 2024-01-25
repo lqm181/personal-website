@@ -3,9 +3,29 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+
+const navigationLinks = [
+  {
+    id: 'projects',
+    href: '#projects',
+    title: 'Projects',
+  },
+  {
+    id: 'about',
+    href: '#about',
+    title: 'About',
+  },
+  {
+    id: 'contact',
+    href: '#contact',
+    title: 'Contact',
+  },
+];
 
 function TopNav() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
   const sections = useRef<NodeListOf<HTMLElement> | null>(null);
   const { theme } = useTheme();
 
@@ -44,7 +64,7 @@ function TopNav() {
 
   return (
     <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-black dark:border-gray-700 fixed top-0 z-[1] w-screen max-w-full flex flex-wrap items-center justify-between mx-auto px-8 py-2 backdrop-blur-lg'>
-      <a href='#'>
+      <a href='#' className='order-1'>
         <div className='flex w-max items-center'>
           <Image
             className='pb-2'
@@ -62,56 +82,55 @@ function TopNav() {
         </div>
       </a>
 
-      {/* Navigation Links */}
-      <NavigationMenu.List className='flex flex-1 flex-grow center list-none '>
-        <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className={`text-black dark:text-white block ${
-              activeSection === 'projects'
-                ? '!text-blue-500 underline'
-                : ' hover:text-blue-500 no-underline'
-            } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
-            href='#projects'
+      <div className='order-2 flex flex-grow justify-end'>
+        <a href='#contact' className='order-2 ml-8'>
+          <button
+            type='button'
+            className='text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 md:px-7 py-2 md:py-2.5 me-2 dark:bg-white dark:hover:bg-gray-200 dark:focus:ring-gray-500 dark:border-gray-500 dark:text-black'
           >
-            Projects
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
+            Let's Talk
+          </button>
+        </a>
 
-        <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className={`block text-black dark:text-white ${
-              activeSection === 'about'
-                ? '!text-blue-500 underline'
-                : ' hover:text-blue-500 no-underline'
-            } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
-            href='#about'
-          >
-            About
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
+        <div className='order-last md:order-1 flex flex-col md:block'>
+          {/* Navigation Links */}
+          {isOpen && (
+            <NavigationMenu.List className='absolute md:static flex flex-col md:flex-row flex-1 flex-grow list-none md:items-center bg-slate-50 dark:bg-gray-900 md:bg-white md:dark:bg-black z-10 md:z-auto rounded w-60 md:w-full right-0 md:right-auto py-2 md:py-0 mt-12 md:mt-0 divide-y divide-solid md:divide-none'>
+              {navigationLinks.map((link, index) => (
+                <NavigationMenu.Item key={index}>
+                  <NavigationMenu.Link
+                    className={`text-black dark:text-white block ${
+                      activeSection === link.id
+                        ? 'bg-blue-500 text-white md:!text-blue-500 md:underline md:bg-transparent'
+                        : 'hover:bg-gray-200 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:hover:text-blue-500 md:hover:bg-inherit no-underline'
+                    } rounded mx-2 px-3 py-3 font-medium leading-none outline-none focus:shadow-[0_0_0_2px] my-1 md:my-0`}
+                    href={link.href}
+                  >
+                    {link.title}
+                  </NavigationMenu.Link>
+                </NavigationMenu.Item>
+              ))}
+            </NavigationMenu.List>
+          )}
 
-        <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className={`block text-black dark:text-white ${
-              activeSection === 'contact'
-                ? '!text-blue-500 underline'
-                : ' hover:text-blue-500 no-underline'
-            } rounded px-3 py-2 font-medium leading-none outline-none focus:shadow-[0_0_0_2px]`}
-            href='#contact'
-          >
-            Contact
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
-      </NavigationMenu.List>
-
-      <a href='#contact'>
-        <button
-          type='button'
-          className='text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5 me-2 mb-2 dark:bg-white dark:hover:bg-gray-200 dark:focus:ring-gray-500 dark:border-gray-500 dark:text-black'
-        >
-          Let's Talk
-        </button>
-      </a>
+          {/* Hamburger Menu Button */}
+          {isOpen ? (
+            <button
+              className='md:hidden inline-flex items-center hover:bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+              onClick={() => setIsOpen(false)}
+            >
+              <AiOutlineClose className='h-8 w-8 text-gray-500 dark:text-gray-200 bg-transparent rounded' />
+            </button>
+          ) : (
+            <button
+              className='md:hidden inline-flex items-center hover:bg-gray-100 rounded focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+              onClick={() => setIsOpen(true)}
+            >
+              <AiOutlineMenu className='h-8 w-8 text-gray-500 dark:text-gray-200 bg-transparent rounded' />
+            </button>
+          )}
+        </div>
+      </div>
     </NavigationMenu.Root>
   );
 }
