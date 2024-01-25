@@ -94,24 +94,25 @@ function TopNav() {
 
         <div className='order-last md:order-1 flex flex-col md:block'>
           {/* Navigation Links */}
-          {isOpen && (
-            <NavigationMenu.List className='absolute md:static flex flex-col md:flex-row flex-1 flex-grow list-none md:items-center bg-slate-50 dark:bg-gray-900 md:bg-white md:dark:bg-black z-10 md:z-auto rounded w-60 md:w-full right-0 md:right-auto py-2 md:py-0 mt-12 md:mt-0 divide-y divide-solid md:divide-none'>
-              {navigationLinks.map((link, index) => (
-                <NavigationMenu.Item key={index}>
-                  <NavigationMenu.Link
-                    className={`text-black dark:text-white block ${
-                      activeSection === link.id
-                        ? 'bg-blue-500 text-white md:!text-blue-500 md:underline md:bg-transparent'
-                        : 'hover:bg-gray-200 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:hover:text-blue-500 md:hover:bg-inherit no-underline'
-                    } rounded mx-2 px-3 py-3 font-medium leading-none outline-none focus:shadow-[0_0_0_2px] my-1 md:my-0`}
-                    href={link.href}
-                  >
-                    {link.title}
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-              ))}
-            </NavigationMenu.List>
-          )}
+          <NavigationMenu.List
+            className={`absolute md:static ${isOpen ? 'flex' : 'hidden md:flex'}
+            flex-col md:flex-row flex-1 flex-grow list-none md:items-center bg-slate-50 dark:bg-gray-900 md:bg-white md:dark:bg-black z-10 md:z-auto rounded w-60 md:w-full right-0 md:right-auto py-2 md:py-0 mt-12 md:mt-0 divide-y divide-solid md:divide-none `}
+          >
+            {navigationLinks.map((link, index) => (
+              <NavigationMenu.Item key={index}>
+                <NavigationMenu.Link
+                  className={`text-black dark:text-white block ${
+                    activeSection === link.id
+                      ? 'bg-blue-500 text-white md:!text-blue-500 md:underline md:bg-transparent'
+                      : 'hover:bg-gray-200 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:hover:text-blue-500 md:hover:bg-inherit no-underline'
+                  } rounded mx-2 px-3 py-3 font-medium leading-none outline-none focus:shadow-[0_0_0_2px] my-1 md:my-0`}
+                  href={link.href}
+                >
+                  {link.title}
+                </NavigationMenu.Link>
+              </NavigationMenu.Item>
+            ))}
+          </NavigationMenu.List>
 
           {/* Hamburger Menu Button */}
           {isOpen ? (
