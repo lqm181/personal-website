@@ -6,11 +6,17 @@ import * as React from 'react';
 
 export default function Home() {
   return (
-    <div className=''>
+    <div className='mb-4'>
       <HeroSection />
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
+
+      <div>
+        <p className='text-sm text-gray-500 dark:text-gray-200 text-center'>
+          Copyright @ 2024 Minh Le. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 }
