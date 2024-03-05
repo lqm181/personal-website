@@ -24,11 +24,13 @@ function AboutSection() {
             height={400}
             width={400}
             alt="Minh Le's Avatar"
-            src='/assets/avatar.jpeg'
-            className='rounded-full'
+            src='/assets/professional_avatar.jpg'
+            className='rounded-2xl'
+            // src='/assets/avatar.jpg'
+            // className='rounded-full'
           />
         </div>
-        <div className='flex flex-col gap-8'>
+        <div className='flex flex-col gap-8 items-center justify-center'>
           <h1 className='text-black dark:text-white text-2xl lg:text-3xl font-bold w-full text-center'>
             A brief intro, who am I?
           </h1>
