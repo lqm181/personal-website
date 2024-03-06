@@ -5,7 +5,8 @@
 * {
   /* outline: 1px solid red; */
   @apply transition-all;
-  @apply duration-300;
+  @apply delay-0;
+  @apply duration-500;
 }
 
 html {

@@ -38,18 +38,20 @@ function ProjectOverlay({
           ))}
         </div>
 
-        <div className='flex mt-8 text-xl text-black dark:text-white font-semibold flex-row justify-between'>
+        <div className='flex mt-8 text-xl font-semibold flex-row justify-between'>
           {/* Only display when the project has a case study */}
           {has_case_study &&
             (case_study_url ? (
               <Link href={case_study_url}>
                 <div className='inline-flex items-center justify-center hover:underline'>
-                  <h3 className='mr-2'>View Case Study</h3>
-                  <MdOutlineArrowOutward />
+                  <h3 className='mr-2 text-black dark:text-white'>
+                    View Case Study
+                  </h3>
+                  <MdOutlineArrowOutward className='text-black dark:text-white' />
                 </div>
               </Link>
             ) : (
-              <h3 className=''>
+              <h3 className='text-black dark:text-white'>
                 <u>Case Study: Coming soon.</u>
               </h3>
             ))}
@@ -59,10 +61,10 @@ function ProjectOverlay({
             <div>
               <Link href={demo_link}>
                 <div className='inline-flex items-center justify-center'>
-                  <h3 className='inline-flex hover:underline mr-2'>
+                  <h3 className='inline-flex hover:underline mr-2 text-black dark:text-white'>
                     Visit Demo Page
                   </h3>
-                  <MdOutlineArrowOutward />
+                  <MdOutlineArrowOutward className='text-black dark:text-white' />
                 </div>
               </Link>
             </div>
