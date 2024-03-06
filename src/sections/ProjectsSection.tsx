@@ -37,6 +37,7 @@ function ProjectsSection() {
             'Selenium',
             'spaCy',
           ]}
+          case_study_url='/projects/ravis'
         >
           <div
             className='flex flex-col w-full h-max min-h-[500px] rounded-3xl shadow-inner items-center py-4'
