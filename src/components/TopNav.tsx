@@ -8,17 +8,17 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 const navigationLinks = [
   {
     id: 'projects',
-    href: '#projects',
+    href: '/#projects',
     title: 'Projects',
   },
   {
     id: 'about',
-    href: '#about',
+    href: '/#about',
     title: 'About',
   },
   {
     id: 'contact',
-    href: '#contact',
+    href: '/#contact',
     title: 'Contact',
   },
 ];
@@ -64,7 +64,7 @@ function TopNav() {
 
   return (
     <NavigationMenu.Root className='bg-white border-gray-200 dark:bg-black dark:border-gray-700 fixed top-0 z-[1] w-screen max-w-full flex flex-wrap items-center justify-between mx-auto px-8 py-2 backdrop-blur-lg'>
-      <a href='#' className='order-1'>
+      <a href='/' className='order-1'>
         <div className='flex w-max items-center'>
           <Image
             className='pb-2'
