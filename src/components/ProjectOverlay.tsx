@@ -1,10 +1,15 @@
+import Link from 'next/link';
 import React, { HTMLAttributes } from 'react';
+import { MdOutlineArrowOutward } from 'react-icons/md';
 
 interface ProjectOverlayProps {
   children: React.ReactNode;
   title: string;
   technologies: string[];
   technologyClassname?: HTMLAttributes<HTMLDivElement>['className'];
+  has_case_study: boolean;
+  case_study_url?: string;
+  demo_link?: string;
 }
 
 function ProjectOverlay({
@@ -12,6 +17,9 @@ function ProjectOverlay({
   title,
   technologies,
   technologyClassname,
+  has_case_study = false,
+  case_study_url,
+  demo_link,
 }: ProjectOverlayProps) {
   return (
     <div className='group relative overflow-hidden container rounded-3xl text-black dark:text-white'>
@@ -30,9 +38,36 @@ function ProjectOverlay({
           ))}
         </div>
 
-        <h3 className='mt-8 text-xl font-semibold text-black dark:text-white'>
-          <u>Case Study: Coming soon.</u>
-        </h3>
+        <div className='flex mt-8 text-xl text-black dark:text-white font-semibold flex-row justify-between'>
+          {/* Only display when the project has a case study */}
+          {has_case_study &&
+            (case_study_url ? (
+              <Link href={case_study_url}>
+                <div className='inline-flex items-center justify-center hover:underline'>
+                  <h3 className='mr-2'>View Case Study</h3>
+                  <MdOutlineArrowOutward />
+                </div>
+              </Link>
+            ) : (
+              <h3 className=''>
+                <u>Case Study: Coming soon.</u>
+              </h3>
+            ))}
+
+          {/* Demo Link */}
+          {demo_link && (
+            <div>
+              <Link href={demo_link}>
+                <div className='inline-flex items-center justify-center'>
+                  <h3 className='inline-flex hover:underline mr-2'>
+                    Visit Demo Page
+                  </h3>
+                  <MdOutlineArrowOutward />
+                </div>
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

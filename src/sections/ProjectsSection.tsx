@@ -23,6 +23,7 @@ function ProjectsSection() {
       <div className='flex flex-col w-full py-4 px-2 lg:px-16 mt-4'>
         {/* Ravis */}
         <ProjectOverlay
+          has_case_study={true}
           title='Fullstack Software Development'
           technologies={[
             'Web Development',
@@ -37,6 +38,7 @@ function ProjectsSection() {
             'Selenium',
             'spaCy',
           ]}
+          case_study_url='/projects/ravis'
         >
           <div
             className='flex flex-col w-full h-max min-h-[500px] rounded-3xl shadow-inner items-center py-4'
@@ -65,6 +67,7 @@ function ProjectsSection() {
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 w-full h-max mt-8'>
           {/* Epik */}
           <ProjectOverlay
+            has_case_study={false}
             title='Software Development with Machine Learning'
             technologies={[
               'COSMIC',
@@ -78,6 +81,7 @@ function ProjectsSection() {
               'Tensorflow',
               'spaCy',
             ]}
+            demo_link='https://huggingface.co/spaces/spark-ds549/Epik'
           >
             <div
               className='grid grid-cols-1 lg:grid-cols-2 rounded-3xl shadow-inner min-h-[500px]'
@@ -109,6 +113,7 @@ function ProjectsSection() {
 
           {/* OS */}
           <ProjectOverlay
+            has_case_study={false}
             title='Operating System Development'
             technologies={[
               'OS Dev',
