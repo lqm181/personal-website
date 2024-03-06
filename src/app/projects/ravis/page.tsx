@@ -1,6 +1,10 @@
 import CollaboratorCard from '@/components/CollaboratorCard';
 import OverviewCard from '@/components/OverviewCard';
 import Section from '@/components/Section';
+import GoBeyondSection from '@/sections/ravis/GoBeyondSection';
+import ProblemSection from '@/sections/ravis/ProblemSection';
+import ResponsibilitySection from '@/sections/ravis/ResponsibilitySection';
+import ResultSection from '@/sections/ravis/ResultSection';
 import Image from 'next/image';
 import React from 'react';
 
@@ -20,9 +24,9 @@ function Page() {
             />
           </div>
         </div>
-        <div className='px-80'>
+        <div className='px-80 space-y-16'>
           {/* Title Section */}
-          <div className='mb-16'>
+          <div className=''>
             <h1 className='font-semibold text-[#B0B0B0] text-[40px]'>RAVIS.</h1>
             <h3 className='font-semibold text-[32px] leading-9 mt-2'>
               Adding 80% more features while reducing product complexity by 60%
@@ -49,6 +53,33 @@ function Page() {
               </div>
             </OverviewCard>
           </div>
+
+          {/* Project Introduction */}
+          <div>
+            <h1 className='project-section-title mb-4'>Introduction</h1>
+            <p className='text-base'>
+              FPT Software is a leading global technology and IT services
+              provider headquartered in Vietnam. During my summer internship at
+              FPT Software, my team and I was tasked with revamping the
+              e-learning recommendation system of our business unit. It is
+              capable of suggesting the employees with courses from platforms
+              like Udemy, Udacity, and Coursera tailored their needs and career
+              goals. With the new system, our team is set to solve the below
+              problems in just 2.5 months.
+            </p>
+          </div>
+
+          {/* Project Problems */}
+          <ProblemSection />
+
+          {/* Results */}
+          <ResultSection />
+
+          {/* Responsibility */}
+          <ResponsibilitySection />
+
+          {/* Going Beyond */}
+          <GoBeyondSection />
         </div>
       </div>
     </Section>

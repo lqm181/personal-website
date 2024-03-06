@@ -37,7 +37,7 @@ function Avatar({
   name += lastName ? lastName : '';
 
   const avatarColor = stringToColor(name);
-  console.log(avatarColor);
+
   return (
     <div style={style}>
       {src ? (
