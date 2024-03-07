@@ -113,12 +113,12 @@ function ContactSection() {
 
             {/* Location */}
             <div className='flex flex-col min-w-60 w-max  gap-4 mb-4'>
-              <h1 className='font-semibold text-lg'>Location</h1>
+              <h1 className='font-semibold text-lg'>Time Zone</h1>
               {/* Address */}
-              <span className='flex items-center gap-2'>
+              {/* <span className='flex items-center gap-2'>
                 <MapPinIcon className='h-4 w-4' />
                 <p>{currentLocation.address} (willing to relocate)</p>
-              </span>
+              </span> */}
 
               {/* Location Time */}
               <span className='flex items-center gap-2'>
