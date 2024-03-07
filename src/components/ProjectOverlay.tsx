@@ -45,7 +45,7 @@ function ProjectOverlay({
               <Link href={case_study_url}>
                 <div className='inline-flex items-center justify-center hover:underline'>
                   <h3 className='mr-2 text-black dark:text-white'>
-                    View Case Study
+                    Read Case Study
                   </h3>
                   <MdOutlineArrowOutward className='text-black dark:text-white' />
                 </div>
@@ -62,7 +62,7 @@ function ProjectOverlay({
               <Link href={demo_link}>
                 <div className='inline-flex items-center justify-center'>
                   <h3 className='inline-flex hover:underline mr-2 text-black dark:text-white'>
-                    Visit Demo Page
+                    View Demo
                   </h3>
                   <MdOutlineArrowOutward className='text-black dark:text-white' />
                 </div>
