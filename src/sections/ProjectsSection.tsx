@@ -26,7 +26,7 @@ function ProjectsSection() {
           has_case_study={true}
           title='Fullstack Software Development'
           technologies={[
-            'Web Development',
+            'Backend + Frontend Development',
             'Recommender System',
             'Nextjs',
             'Flask',
