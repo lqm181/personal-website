@@ -81,7 +81,7 @@ function ProjectsSection() {
               'Tensorflow',
               'spaCy',
             ]}
-            demo_link='https://huggingface.co/spaces/spark-ds549/Epik'
+            live_link='https://huggingface.co/spaces/spark-ds549/Epik'
           >
             <div
               className='grid grid-cols-1 lg:grid-cols-2 rounded-3xl shadow-inner min-h-[500px]'

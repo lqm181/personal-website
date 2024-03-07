@@ -9,7 +9,7 @@ interface ProjectOverlayProps {
   technologyClassname?: HTMLAttributes<HTMLDivElement>['className'];
   has_case_study: boolean;
   case_study_url?: string;
-  demo_link?: string;
+  live_link?: string;
 }
 
 function ProjectOverlay({
@@ -19,7 +19,7 @@ function ProjectOverlay({
   technologyClassname,
   has_case_study = false,
   case_study_url,
-  demo_link,
+  live_link,
 }: ProjectOverlayProps) {
   return (
     <div className='group relative overflow-hidden container rounded-3xl text-black dark:text-white'>
@@ -57,12 +57,12 @@ function ProjectOverlay({
             ))}
 
           {/* Demo Link */}
-          {demo_link && (
+          {live_link && (
             <div>
-              <Link href={demo_link}>
+              <Link href={live_link}>
                 <div className='inline-flex items-center justify-center'>
                   <h3 className='inline-flex hover:underline mr-2 text-black dark:text-white'>
-                    View Demo
+                    View Live
                   </h3>
                   <MdOutlineArrowOutward className='text-black dark:text-white' />
                 </div>
