@@ -117,7 +117,7 @@ function ContactSection() {
               {/* Address */}
               <span className='flex items-center gap-2'>
                 <MapPinIcon className='h-4 w-4' />
-                <p>{currentLocation.address}</p>
+                <p>{currentLocation.address} (willing to relocate)</p>
               </span>
 
               {/* Location Time */}
