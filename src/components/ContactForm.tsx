@@ -26,7 +26,7 @@ function ContactForm() {
           process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         );
 
-        toast.success('Message sent successfully!');
+        toast.success('Thank you! Your message has been sent.');
         formRef.current?.reset();
       } catch (error: any) {
         toast.error('Failed to sent message.');
