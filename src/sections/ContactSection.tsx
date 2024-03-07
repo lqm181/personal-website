@@ -39,9 +39,9 @@ function ContactSection() {
             Let's work together.
           </h1>
           <h3 className='text-base font-light lg:text-lg text-gray-500 dark:text-gray-200 lg:pr-32 mb-12'>
-            I am actively seeking full-time opportunities as a software engineer
-            where I can contribute to impactful projects, enhance my skills, and
-            grow as a professional.
+            I am opened to connect and deliver impactful contributions to your
+            projects, whether you represent an established company or a dynamic
+            startup.
           </h3>
 
           <ContactForm />
