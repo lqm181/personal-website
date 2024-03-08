@@ -53,14 +53,16 @@ function ProjectsSection() {
             <h3 className='text-black dark:text-white text-2xl lg:text-3xl text-center font-medium'>
               personalized learning recommendations.
             </h3>
-            <Image
-              className='scale-75 lg:scale-75 -mt-2 -mb-12'
-              src='/assets/ravis_photo.png'
-              width={916}
-              height={1500}
-              quality={100}
-              alt='Ravis Demo Image'
-            />
+
+            <div className='flex px-2 flex-1 md:flex-none md:max-w-[750px] justify-center items-center md:mt-12'>
+              <Image
+                src='/assets/ravis_photo.png'
+                width={1787}
+                height={1092}
+                quality={100}
+                alt='Ravis Demo Image'
+              />
+            </div>
           </div>
         </ProjectOverlay>
 
