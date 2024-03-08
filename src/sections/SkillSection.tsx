@@ -77,16 +77,16 @@ function SkillSection() {
         </SkillContainer>
 
         <SkillContainer title='Backend'>
-          <Skill name='Node.js' icon={<SiNodedotjs />} />
           <Skill name='Python' icon={<FaPython />} />
           <Skill name='Java' icon={<FaJava />} />
-          <Skill name='C++' icon={<SiCsharp />} />
-          <Skill name='Go' icon={<SiGo />} />
           <Skill name='C' icon={<SiC />} />
+          <Skill name='Go' icon={<SiGo />} />
+          <Skill name='C++' icon={<SiCsharp />} />
           <Skill name='Flask' icon={<SiFlask />} />
           <Skill name='MongoDB' icon={<SiMongodb />} />
           <Skill name='MySQL' icon={<SiMysql />} />
           <Skill name=' Neo4j' icon={<SiNeo4J />} />
+          <Skill name='Node.js' icon={<SiNodedotjs />} />
           <Skill name='Apache Tomcat' icon={<SiApachetomcat />} />
         </SkillContainer>
 

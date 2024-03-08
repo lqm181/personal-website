@@ -19,7 +19,7 @@ const currentLocation = {
 function ContactSection() {
   return (
     <Section
-      className='px-4 lg:px-16 py-16 items-center h-max'
+      className='px-4 lg:px-16 py-16 items-center h-max !mb-8'
       data-section
       id='contact'
       theme='light'
