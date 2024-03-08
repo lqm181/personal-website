@@ -4,6 +4,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import Link from 'next/link';
 
 const navigationLinks = [
   {
@@ -83,14 +84,14 @@ function TopNav() {
       </a>
 
       <div className='order-2 flex flex-grow justify-end'>
-        <a href='#contact' className='order-2 ml-8'>
+        <Link href='/#contact' className='order-2 ml-8'>
           <button
             type='button'
             className='text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 md:px-7 py-2 md:py-2.5 me-2 dark:bg-white dark:hover:bg-gray-200 dark:focus:ring-gray-500 dark:border-gray-500 dark:text-black'
           >
             Let's Talk
           </button>
-        </a>
+        </Link>
 
         <div
           className='order-last md:order-1 flex flex-col md:block'
@@ -103,16 +104,17 @@ function TopNav() {
           >
             {navigationLinks.map((link, index) => (
               <NavigationMenu.Item key={index}>
-                <NavigationMenu.Link
+                <Link
+                  replace={true}
                   className={`text-black dark:text-white block ${
                     activeSection === link.id
                       ? 'bg-blue-500 text-white md:!text-blue-500 md:underline md:bg-transparent'
                       : 'hover:bg-gray-200 dark:hover:bg-gray-700 md:dark:hover:bg-transparent md:hover:text-blue-500 md:hover:bg-inherit no-underline'
-                  } rounded mx-2 px-3 py-3 font-medium leading-none outline-none focus:shadow-[0_0_0_2px] my-1 md:my-0`}
+                  } rounded mx-2 px-3 py-3 font-medium leading-none outline-none my-1 md:my-0`}
                   href={link.href}
                 >
                   {link.title}
-                </NavigationMenu.Link>
+                </Link>
               </NavigationMenu.Item>
             ))}
           </NavigationMenu.List>

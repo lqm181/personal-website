@@ -59,7 +59,7 @@ function ProjectOverlay({
           {/* Demo Link */}
           {live_link && (
             <div>
-              <Link href={live_link}>
+              <Link href={live_link} target='_blank'>
                 <div className='inline-flex items-center justify-center'>
                   <h3 className='inline-flex hover:underline mr-2 text-black dark:text-white'>
                     View Live
