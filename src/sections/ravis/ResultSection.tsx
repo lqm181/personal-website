@@ -11,13 +11,13 @@ const results = [
   {
     src: '/assets/ravis/course_page.png',
     subtitle:
-      'Graph and visualizations are added to facilitate user’s studying.',
+      "Graph and visualizations are added to facilitate user's studying.",
     alt: 'Learning progress with charts image',
   },
   {
     src: '/assets/ravis/search_page.png',
     subtitle:
-      'A functional search system with sort and filter using Neo4j’s full-text indexing and Apache Lucene',
+      "A functional search system with sort and filter using Neo4j's full-text indexing and Apache Lucene.",
     alt: 'Search page image',
   },
   {
@@ -45,7 +45,7 @@ function ResultSection() {
               height={940}
               width={1920}
               quality={100}
-              className='rounded-xl border-8 border-black shadow-2xl'
+              className='rounded-lg md:rounded-xl border-4 md:border-8 border-black shadow-2xl'
             />
 
             <p className='text-sm md:text-base mt-3 text-center'>

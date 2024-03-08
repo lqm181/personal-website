@@ -37,7 +37,7 @@ function GoBeyondSection() {
               height={940}
               width={1920}
               quality={100}
-              className='rounded-xl border-8 border-black shadow-2xl'
+              className='rounded-lg md:rounded-xl border-4 md:border-8 border-black shadow-2xl'
             />
 
             <p className='mt-3 text-center'>{result.subtitle}</p>
