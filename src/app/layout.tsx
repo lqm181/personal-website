@@ -65,7 +65,6 @@ export default function RootLayout({
           </header>
           <main className='bg-white dark:bg-black px-8'>
             {children}
-
             <ToastContainer
               position='top-right'
               autoClose={3000}
@@ -76,6 +75,11 @@ export default function RootLayout({
               theme='light'
             />
           </main>
+          <footer>
+            <p className='text-sm text-gray-500 dark:text-gray-200 text-center'>
+              Copyright @ 2024 Minh Le. All rights reserved.
+            </p>
+          </footer>
         </Providers>
       </body>
     </html>

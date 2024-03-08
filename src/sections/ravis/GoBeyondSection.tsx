@@ -17,7 +17,7 @@ const results = [
 
 function GoBeyondSection() {
   return (
-    <div>
+    <div className='text-sm md:text-base'>
       <h1 className='project-section-title mb-4'>Going Beyond</h1>
       <p className='mb-8'>
         Having pride and enthusiasm for what we did, our team commit to go
@@ -40,7 +40,7 @@ function GoBeyondSection() {
               className='rounded-xl border-8 border-black shadow-2xl'
             />
 
-            <p className='mt-3'>{result.subtitle}</p>
+            <p className='mt-3 text-center'>{result.subtitle}</p>
           </div>
         ))}
       </div>

@@ -19,7 +19,7 @@ const currentLocation = {
 function ContactSection() {
   return (
     <Section
-      className='px-4 lg:px-16 py-16 items-center h-max !mb-8'
+      className='px-4 lg:px-16 py-4 lg:py-16 items-center h-max !mb-8'
       data-section
       id='contact'
       theme='light'
@@ -33,7 +33,7 @@ function ContactSection() {
       </div>
 
       {/* Contact Form */}
-      <div className='grid grid-cols-2 lg:grid-cols-3 gap-16 w-full'>
+      <div className='grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16 w-full'>
         <div className='col-span-2 w-full'>
           <h1 className='text-black dark:text-white text-3xl lg:text-4xl font-bold mb-4'>
             Let's work together.
@@ -78,7 +78,7 @@ function ContactSection() {
             </div>
 
             {/* My Digital Spaces */}
-            <div className='flex flex-col min-w-60 w-max  gap-4 mb-4'>
+            <div className='flex flex-col min-w-60 w-max gap-4 mb-4'>
               <h1 className='font-semibold text-lg'>My Digital Spaces</h1>
               {/* Github */}
               <span className='flex items-center gap-2'>

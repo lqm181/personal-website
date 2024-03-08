@@ -13,12 +13,6 @@ export default function Home() {
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
-
-      <div>
-        <p className='text-sm text-gray-500 dark:text-gray-200 text-center'>
-          Copyright @ 2024 Minh Le. All rights reserved.
-        </p>
-      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function ResponsibilitySection() {
   return (
-    <div>
+    <div className='text-sm md:text-base'>
       <h1 className='project-section-title mb-4'>My Responsibilities</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div>

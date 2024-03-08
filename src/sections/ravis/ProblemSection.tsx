@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProblemSection() {
   return (
-    <div>
+    <div className='text-sm md:text-base'>
       <h1 className='project-section-title mb-4'>Problems</h1>
       <div className='flex flex-col gap-4'>
         <div>

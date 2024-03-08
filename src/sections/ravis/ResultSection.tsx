@@ -48,7 +48,9 @@ function ResultSection() {
               className='rounded-xl border-8 border-black shadow-2xl'
             />
 
-            <p className='mt-3'>{result.subtitle}</p>
+            <p className='text-sm md:text-base mt-3 text-center'>
+              {result.subtitle}
+            </p>
           </div>
         ))}
       </div>
