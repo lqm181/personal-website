@@ -75,7 +75,7 @@ export default function RootLayout({
               theme='light'
             />
           </main>
-          <footer>
+          <footer className='pb-4'>
             <p className='text-sm text-gray-500 dark:text-gray-200 text-center'>
               Copyright @ 2024 Minh Le. All rights reserved.
             </p>
