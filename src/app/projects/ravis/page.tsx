@@ -72,11 +72,11 @@ function Page() {
           {/* Project Problems */}
           <ProblemSection />
 
-          {/* Results */}
-          <ResultSection />
-
           {/* Responsibility */}
           <ResponsibilitySection />
+
+          {/* Results */}
+          <ResultSection />
 
           {/* Going Beyond */}
           <GoBeyondSection />
