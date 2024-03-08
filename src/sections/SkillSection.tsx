@@ -64,7 +64,7 @@ function SkillSection() {
         </h1>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 px-16'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 md:mt-16 px-2 md:px-16'>
         <SkillContainer title='Frontend'>
           <Skill name='HTML' icon={<FaHtml5 />} />
           <Skill name='React' icon={<FaReact />} />

@@ -12,7 +12,7 @@ function ProjectsSection() {
       theme='dark'
       id='projects'
     >
-      <div className='flex justify-centers items-center mb-20'>
+      <div className='flex justify-centers items-center mb-4 md:mb-20'>
         <ComputerDesktopIcon className='h-6 w-6 lg:h-10 lg:w-10 text-black dark:text-white mr-4' />
         <h1 className='text-black dark:text-white font-extrabold text-4xl lg:text-5xl text-center'>
           Recent Projects

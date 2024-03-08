@@ -25,7 +25,7 @@ function Section({ children, className, theme, ...props }: SectionProps) {
   });
   return (
     <section
-      className={`flex flex-col bg-white dark:bg-black mt-8 mb-60 min-h-svh ${
+      className={`flex flex-col bg-white dark:bg-black mt-8 mb-20 md:mb-60 min-h-svh ${
         className ? className : ''
       }`}
       ref={container}
