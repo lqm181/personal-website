@@ -64,7 +64,7 @@ function Page() {
             Software, my team and I was tasked with revamping the e-learning
             recommendation system of our business unit. It is capable of
             suggesting the employees with courses from platforms like Udemy,
-            Udacity, and Coursera tailored their needs and career goals. With
+            Udacity, and Coursera tailored to their needs and career goals. With
             the new system, our team is set to solve the below problems in just
             2.5 months.
           </p>
