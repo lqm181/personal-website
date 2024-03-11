@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: {
     template: '%s | Minh Le',
-    default: "Minh Le's Portfolio Website",
+    default: 'Minh Le | Full Stack Software Developer',
   },
   description:
     'Software Engineer with 7+ years of coding experience and a passion for buidling impactful and high-quality software solutions.',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Minh Le's Portfolio Website",
+    title: 'Minh Le | Fullstack Software Developer',
     description:
       'Software Engineer with 7+ years of coding experience and a passion for buidling impactful and high-quality software solutions.',
     url: 'https://minhleq.com/',

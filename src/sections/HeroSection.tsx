@@ -27,7 +27,7 @@ function HeroSection() {
         {/* Right Section */}
         <div className='flex flex-col justify-center items-center lg:pl-16 mt-4 lg:mt-0'>
           <p className='text-black dark:text-white text-2xl lg:text-4xl mb-12 lg:mb-20'>
-            I'm a curiosity-driven software engineer with a passion for
+            I'm a curiosity-driven software developer with a passion for
             expanding my tech knowledge and developing high-quality software.
           </p>
 
