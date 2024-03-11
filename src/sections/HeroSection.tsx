@@ -16,8 +16,8 @@ function HeroSection() {
               Status: Open to Work
             </p>
           </div>
-          <h1 className='text-5xl lg:text-8xl font-extrabold leading-2 tracking-tight mb-4'>
-            <i className='text-black dark:text-white'>Xin chào</i> {'👋'}
+          <h1 className='text-black dark:text-white text-5xl lg:text-8xl font-extrabold leading-2 tracking-tight mb-4'>
+            Xin chào {'👋'}
           </h1>
           <h1 className='text-5xl lg:text-8xl font-extrabold leading-2 tracking-tight text-black dark:text-white'>
             I'm Minh.
