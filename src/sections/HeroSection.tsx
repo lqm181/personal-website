@@ -31,11 +31,11 @@ function HeroSection() {
             expanding my tech knowledge and developing high-quality software.
           </p>
 
-          <div className='flex justify-evenly w-full'>
+          <div className='flex justify-around w-full'>
             <a href='#contact'>
               <button
                 type='button'
-                className='text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 min-w-32'
+                className='text-white bg-black hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg md:text-lg px-8 py-4 text-center dark:bg-white dark:hover:bg-gray-300 dark:focus:ring-gray-100 w-32 md:w-60'
               >
                 Contact Me
               </button>
@@ -43,9 +43,9 @@ function HeroSection() {
             <a href='#projects'>
               <button
                 type='button'
-                className='py-2.5 px-5 text-sm font-medium text-blue-800 focus:outline-none bg-white rounded-full border border-blue-500 hover:bg-gray-100 hover:boder-blue-700 focus:ring-4 focus:ring-blue-300 focus:z-10 dark:bg-black dark:text-white dark:border-white dark:hover:text-white dark:hover:bg-gray-700 min-w-32'
+                className='py-4 px-8 md:text-lg font-medium text-black focus:outline-none bg-white rounded-lg border border-black hover:bg-gray-100 hover:border-gray-700 focus:ring-4 focus:ring-gray-300 focus:z-10 dark:bg-black dark:text-white dark:border-white dark:hover:text-white dark:hover:bg-gray-700 w-32 md:w-60'
               >
-                Projects
+                View Projects
               </button>
             </a>
           </div>
