@@ -1,4 +1,27 @@
-import React from 'react';
+import React, { HTMLAttributes, HTMLProps } from 'react';
+import { IconType } from 'react-icons';
+import {
+  BsDatabase,
+  BsSearch,
+  BsShieldCheck,
+  BsWindowSidebar,
+} from 'react-icons/bs';
+
+const TitleIcon = ({
+  icon,
+  containerProps,
+}: {
+  icon: React.ReactNode;
+  containerProps?: string;
+}) => {
+  return (
+    <div
+      className={`inline-flex text-2xl md:text-4xl p-3 rounded-xl ${containerProps}`}
+    >
+      {icon}
+    </div>
+  );
+};
 
 function ResponsibilitySection() {
   return (
@@ -6,6 +29,10 @@ function ResponsibilitySection() {
       <h1 className='project-section-title mb-4'>My Responsibilities</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div>
+          <TitleIcon
+            icon={<BsWindowSidebar className='stroke-[0.25]' />}
+            containerProps='bg-emerald-100 text-emerald-600 mb-1'
+          />
           <h2 className='project-section-subtitle mb-2'>
             Front-end Development
           </h2>
@@ -16,6 +43,11 @@ function ResponsibilitySection() {
         </div>
 
         <div>
+          <TitleIcon
+            icon={<BsShieldCheck className='stroke-[0.25]' />}
+            containerProps='bg-emerald-100 text-emerald-600 mb-1'
+          />
+
           <h2 className='project-section-subtitle mb-2'>OAuth with Azure</h2>
           <p>
             I was in charge of setting up the authentication logic like sign
@@ -25,6 +57,10 @@ function ResponsibilitySection() {
         </div>
 
         <div>
+          <TitleIcon
+            icon={<BsSearch className='stroke-[0.25]' />}
+            containerProps='bg-emerald-100 text-emerald-600 mb-1'
+          />
           <h2 className='project-section-subtitle mb-2'>
             Search System with Pagination
           </h2>
@@ -37,6 +73,10 @@ function ResponsibilitySection() {
         </div>
 
         <div>
+          <TitleIcon
+            icon={<BsDatabase className='stroke-[0.25]' />}
+            containerProps='bg-emerald-100 text-emerald-600 mb-1'
+          />
           <h2 className='project-section-subtitle mb-2'>
             Data Access Layer Design
           </h2>
