@@ -5,6 +5,7 @@ import GoBeyondSection from '@/sections/ravis/GoBeyondSection';
 import ProblemSection from '@/sections/ravis/ProblemSection';
 import ResponsibilitySection from '@/sections/ravis/ResponsibilitySection';
 import ResultSection from '@/sections/ravis/ResultSection';
+import TechnologiesUsed from '@/sections/ravis/TechnologiesUsed';
 import Image from 'next/image';
 import React from 'react';
 
@@ -54,6 +55,8 @@ function Page() {
             </div>
           </OverviewCard>
         </div>
+
+        <TechnologiesUsed />
 
         {/* Project Introduction */}
         <div>
