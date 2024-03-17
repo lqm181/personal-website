@@ -1,4 +1,6 @@
 import Section from '@/components/Section';
+import Skill from '@/components/skill/Skill';
+import SkillContainer from '@/components/skill/SkillContainer';
 import React from 'react';
 import { FaCss3, FaHtml5, FaJava, FaPython, FaReact } from 'react-icons/fa';
 import {
@@ -21,39 +23,6 @@ import {
   SiTypescript,
 } from 'react-icons/si';
 import { TbBrandNetbeans, TbBrandVscode } from 'react-icons/tb';
-
-const Skill = ({ icon, name }: { icon: React.ReactNode; name: string }) => {
-  return (
-    <div className='flex flex-col items-center justify-center'>
-      <span className='text-gray-500 dark:text-white text-4xl md:text-5xl'>
-        {icon}
-      </span>
-      <span className='text-base md:text-lg mt-1 text-black dark:text-white'>
-        {name}
-      </span>
-    </div>
-  );
-};
-
-const SkillContainer = ({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) => {
-  return (
-    <div className='flex flex-col py-8 justify-center items-center w-full shadow-lg rounded-lg backdrop-blur-xl bg-zinc-100/40 h-fit'>
-      <h1 className='font-semibold text-2xl md:text-3xl text-black dark:text-white'>
-        {title}
-      </h1>
-
-      <div className='flex flex-wrap mt-8 items-center gap-x-10 gap-y-10 px-6 justify-center'>
-        {children}
-      </div>
-    </div>
-  );
-};
 
 function SkillSection() {
   return (
