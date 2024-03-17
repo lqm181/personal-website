@@ -34,10 +34,10 @@ function ProblemSection() {
             The system architecture is unnecessarily complicated.
           </h2>
           <p>
-            Even though it has the potential of only 300+ daily users, the old
-            system uses expensive and respectively complex solutions like AWS
-            EC2, AWS Lambda, and two separate databases (Neo4j and MongoDB) for
-            storing user data.
+            The old system uses expensive and respectively complex solutions
+            like AWS EC2, AWS Lambda, and two separate databases (Neo4j and
+            MongoDB) for storing user data even though in-house on-premise
+            solutions are available.
           </p>
         </div>
 

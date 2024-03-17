@@ -34,6 +34,21 @@ function ResultSection() {
       <h1 className='project-section-title mb-8'>Results</h1>
 
       <div className='flex flex-col space-y-12'>
+        <div className='flex flex-col justify-center items-center'>
+          <Image
+            src='/assets/ravis/architecture.png'
+            alt='System Architecture Image'
+            height={940}
+            width={1920}
+            quality={100}
+            className='bg-white dark:bg-gray-300 shadow-md rounded-lg md:rounded-xl'
+          />
+          <p className='text-sm md:text-base mt-3 text-center'>
+            A simpler and more effective system with the removal of excessive
+            MongoDB database and technologies.
+          </p>
+        </div>
+
         {results.map((result, index) => (
           <div
             key={index}
