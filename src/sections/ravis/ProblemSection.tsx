@@ -34,7 +34,7 @@ function ProblemSection() {
             The system architecture is unnecessarily complicated.
           </h2>
           <p>
-            The old system uses expensive and respectively complex solutions
+            The old system used expensive and respectively complex solutions
             like AWS EC2, AWS Lambda, and two separate databases (Neo4j and
             MongoDB) for storing user data even though in-house on-premise
             solutions are available.
@@ -46,11 +46,11 @@ function ProblemSection() {
             Database is inefficiently used.
           </h2>
           <p>
-            The old system used Neo4j as the main database but only for storing
-            user data. It opts for a neural collaborative-filtering model that
-            requires hand-labeling for 3000+ skills. Consequently, it fails to
-            leverage the nature of Neo4j being a graph database, which is
-            well-known for recommendation system applications.
+            Neo4j was used as the main database but only for storing user data.
+            It opts for a neural collaborative-filtering model that requires
+            hand-labeling for 3000+ skills. Consequently, it fails to leverage
+            the nature of Neo4j being a graph database, which is well-known for
+            recommendation system applications.
           </p>
         </div>
       </div>
